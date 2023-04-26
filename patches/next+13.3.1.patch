@@ -1,0 +1,14 @@
+diff --git a/node_modules/next/dist/server/next.js b/node_modules/next/dist/server/next.js
+index d3ad470..905eb86 100644
+--- a/node_modules/next/dist/server/next.js
++++ b/node_modules/next/dist/server/next.js
+@@ -227,6 +227,7 @@ function createServer(options) {
+ }
+ // Support commonjs `require('next')`
+ module.exports = createServer;
+-const _default = createServer;
+-
++exports = module.exports;
++var _default = createServer;
++exports.default = _default;
+ //# sourceMappingURL=next.js.map
